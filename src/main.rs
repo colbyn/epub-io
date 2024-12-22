@@ -46,7 +46,7 @@ fn main() {
 
 #[derive(clap::Parser, Debug)]
 #[command(name = "epub-io")]
-#[command(about = "A CLI tool for dumping EPUB files and processing content into clean plain text files.", long_about = None)]
+#[command(about = "A CLI tool for dumping the contents of EPUB files and processing content into clean plain text files.", long_about = None)]
 enum Command {
     /// Dump the contents of the given input EPUB file to the specified output directory. 
     Dump(DumpCommand),
