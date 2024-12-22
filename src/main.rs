@@ -58,8 +58,11 @@ struct DumpCommand {
     #[arg(long)]
     input: PathBuf,
     /// The output directory path. 
+    /// 
+    /// Will create the output directory if missing. 
     #[arg(long)]
     output: PathBuf,
+    /// Include plain text versions of the unpacked HTML files using `html2text`.
     #[arg(long)]
     html2text: bool,
     /// When the `html2text` flag is on, the text will be wrapped to `width` columns.
